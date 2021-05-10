@@ -1,11 +1,14 @@
 import React from 'react';
 import './app-header.css';
 
-function AppHeader() {
+function AppHeader({ liked, allPosts }) {
   return (
     <div className="app-header d-flex">
       <h1>Irina Mikheeva</h1>
-      <h2> 5 notes, liked 0</h2>
+      <h2>
+        {' '}
+        {allPosts} notes, liked {liked}
+      </h2>
     </div>
   );
 }
